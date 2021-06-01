@@ -44,14 +44,25 @@ is
    gbl_flt_offset_y    : Float := 0.0; 
    gbl_flt_offset_z    : Float := 0.0; 
    
+   -- vflt_feedrate_20, vflt_feedrate_21, vflt_scaling_z, vflt_scaling_xy : Float; 
+   -- vflt_offset_x,    vflt_offset_y,    vflt_offset_z : Float; 
+   
+   vubs_action : ASU.Unbounded_String; 
+   vfltnext_x, vfltnext_y, vfltnext_z, vfltnext_i, vfltnext_j, vfltnext_f : Float; 
+   
       
    -- =====================================================
-   procedure vectorize_eachline (linestring : String; out_fhandle_02, out_fhandle_03 : ATIO.File_Type; linecount : Integer) is 
+   procedure vectorize_eachline (linestring : String; 
+                                 out_fhandle_02, out_fhandle_03, out_fhandle_04 : ATIO.File_Type; 
+                                 linecount : Integer) is 
    -- =====================================================
       -- Define substrings array to be populated by the actual substring elements   
       -- separated by TabAndSpace
       substrings : GSS.Slice_Set;
       TabAndSpace : constant String :=  (" " & ACL1.HT);
+      
+      -- ubs_action : ASU.Unbounded_String; 
+      
       
     begin 
     
@@ -72,6 +83,8 @@ is
       ATIO.Put_Line (out_fhandle_02, Integer'Image(10*linecount) & " captured total count =" & GSS.Slice_Number'Image (GSS.Slice_Count (substrings)) & " substrings:");      
       ATIO.Put_Line (Integer'Image(10*linecount) & " captured total count =" & GSS.Slice_Number'Image (GSS.Slice_Count (substrings)) & " substrings:");
      
+      
+      
       -- =================================================================
       --  LOOP THROUGH substrings ARRAY.
       --  Report results, starting with the count of substrings created.
@@ -84,6 +97,7 @@ is
             ubs_feedrate_20, ubs_feedrate_21, ubs_scaling_z, ubs_scaling_xy : ASU.Unbounded_String; 
             ubs_offset_x,    ubs_offset_y,    ubs_offset_z : ASU.Unbounded_String; 
             ubs_token, ubs_action, ubsnext_x, ubsnext_y, ubsnext_z, ubsnext_i, ubsnext_j, ubsnext_f : ASU.Unbounded_String; 
+                      
                         
             flt_feedrate_20, flt_feedrate_21, flt_scaling_z, flt_scaling_xy : Float; 
             flt_offset_x,    flt_offset_y,    flt_offset_z : Float; 
@@ -126,6 +140,7 @@ is
             -- FOR first character % = Control
             if (ubs_token = "%") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                              
                ATIO.Put_Line (Integer'Image(10*linecount) & " %" );               
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " %" ); 
@@ -135,6 +150,7 @@ is
             -- FOR first 2 chars M2 = Control
             if (ubs_token = "M2") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                
                ATIO.Put_Line (Integer'Image(10*linecount) & " M2" );
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " M2" ); 
@@ -143,6 +159,7 @@ is
             -- FOR first 2 chars M3 = Control
             if (ubs_token = "M3") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                
                ATIO.Put_Line (Integer'Image(10*linecount) & " M3" );
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " M3" ); 
@@ -151,6 +168,7 @@ is
             -- FOR first 2 chars M5 = Control
             if (ubs_token = "M5") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                
                ATIO.Put_Line (Integer'Image(10*linecount) & " M5" ); 
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " M5" ); 
@@ -159,6 +177,7 @@ is
             -- FOR first 3 chars G21 = All units in mm
             if (ubs_token = "G21") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                
                ATIO.Put_Line (Integer'Image(10*linecount) & " G21 All units in mm" ); 
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " G21 All units in mm" ); 
@@ -168,6 +187,7 @@ is
             -- X-axis Offset
             if (ubs_token = "#6") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                             
                ubs_offset_x := ASU.To_Unbounded_String (GSS.Slice (substrings, 3));
                ATIO.Put_Line (Integer'Image(10*linecount) & " #6 ubs_offset_x = " & ASU.To_String (ubs_offset_x) ); 
@@ -183,11 +203,13 @@ is
                
                gbl_flt_offset_x := flt_offset_x;
                
+               
             end if;
             
             -- Y-axis Offset
             if (ubs_token = "#7") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                               
                ubs_offset_y := ASU.To_Unbounded_String (GSS.Slice (substrings, 3));
                ATIO.Put_Line (Integer'Image(10*linecount) & " #7 ubs_offset_y = " & ASU.To_String (ubs_offset_y) ); 
@@ -204,6 +226,7 @@ is
             -- Z-axis Offset
             if (ubs_token = "#8") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                
                ubs_offset_z := ASU.To_Unbounded_String (GSS.Slice (substrings, 3));
                ATIO.Put_Line (Integer'Image(10*linecount) & " #8 ubs_offset_z = " & ASU.To_String (ubs_offset_z) ); 
@@ -221,6 +244,7 @@ is
             -- XY-axis_scaling
             if (ubs_token = "#10") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                
                ubs_scaling_xy := ASU.To_Unbounded_String (GSS.Slice (substrings, 3));
                ATIO.Put_Line (Integer'Image(10*linecount) & " #10 ubs_scaling_xy = " & ASU.To_String (ubs_scaling_xy) ); 
@@ -240,6 +264,7 @@ is
             -- Z-axis_scaling
             if (ubs_token = "#11") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                
                ubs_scaling_z := ASU.To_Unbounded_String (GSS.Slice (substrings, 3));
                ATIO.Put_Line (Integer'Image(10*linecount) & " #11 ubs_scaling_z = " & ASU.To_String (ubs_scaling_z) );
@@ -257,6 +282,7 @@ is
             -- Feed_definition 20
             if (ubs_token = "#20") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
               
                ubs_feedrate_20 := ASU.To_Unbounded_String (GSS.Slice (substrings, 3));
                ATIO.Put_Line (Integer'Image(10*linecount) & " #20 feedrate_20 = " & ASU.To_String (ubs_feedrate_20) );   
@@ -273,6 +299,7 @@ is
             -- Feed_definition 21
             if (ubs_token = "#21") then
                ubs_action := ubs_token;
+               vubs_action := ubs_action;
                              
                ubs_feedrate_21 := ASU.To_Unbounded_String (GSS.Slice (substrings, 3));
                ATIO.Put_Line (Integer'Image(10*linecount) & " #21 feedrate_21 = " & ASU.To_String (ubs_feedrate_21) ); 
@@ -289,8 +316,8 @@ is
             
             -- (3) MOTION CODES ===================================================
             if (ubs_token = "G00") then
-               ubs_action := ubs_token;
-               
+               ubs_action := ubs_token;               
+               vubs_action := ubs_action;
                ATIO.Put_Line (Integer'Image(10*linecount) & " ubsaction = " & ASU.To_String (ubs_action) );
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " ubsaction = " & ASU.To_String (ubs_action) );
             
@@ -298,7 +325,7 @@ is
             
             if (ubs_token = "G01") then
                ubs_action := ubs_token;
-               
+               vubs_action := ubs_action;
                ATIO.Put_Line (Integer'Image(10*linecount) & " ubsaction = " & ASU.To_String (ubs_action) );
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " ubsaction = " & ASU.To_String (ubs_action) );
                
@@ -306,7 +333,7 @@ is
             
             if (ubs_token = "G02") then
                ubs_action := ubs_token;
-               
+               vubs_action := ubs_action;
                ATIO.Put_Line (Integer'Image(10*linecount) & " ubsaction = " & ASU.To_String (ubs_action) );
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " ubsaction = " & ASU.To_String (ubs_action) );
             
@@ -314,7 +341,7 @@ is
             
             if (ubs_token = "G03") then
                ubs_action := ubs_token;
-               
+               vubs_action := ubs_action;
                ATIO.Put_Line (Integer'Image(10*linecount) & " ubsaction = " & ASU.To_String (ubs_action) );
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " ubsaction = " & ASU.To_String (ubs_action) );
             
@@ -335,7 +362,8 @@ is
                fltnext_x := Float'Value(ASU.Slice(ubsnext_x, 3, endNumberX-1));   
                   
                -- fltnext_x := Float'Value(ASU.Slice(ubsnext_x, 3, 7));
-               fltnext_x := (fltnext_x * gbl_flt_scaling_x) + gbl_flt_offset_x;
+                  fltnext_x := (fltnext_x * gbl_flt_scaling_x) + gbl_flt_offset_x;
+                  vfltnext_x := fltnext_x;
                
                ATIO.Put_Line (Integer'Image(10*linecount) & " fltnext_x = " & Float'Image (fltnext_x) );
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " fltnext_x = " & Float'Image (fltnext_x) ); 
@@ -345,6 +373,7 @@ is
                   fltnext_x := Float'Value(ASU.Slice(ubsnext_x, 2, 7));
                   ATIO.Put_Line (Integer'Image(10*linecount) & " fltnext_x = " & Float'Image (fltnext_x) );
                   ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " fltnext_x = " & Float'Image (fltnext_x) );
+                  vfltnext_x := fltnext_x;
                   
                  -- null;   
                end if;     
@@ -365,7 +394,9 @@ is
                fltnext_y := Float'Value(ASU.Slice(ubsnext_y, 3, endNumberY-1));      
                
                -- fltnext_y := Float'Value(ASU.Slice(ubsnext_y, 3, 7));
-               fltnext_y := (fltnext_y * gbl_flt_scaling_y) + gbl_flt_offset_y;
+                  fltnext_y := (fltnext_y * gbl_flt_scaling_y) + gbl_flt_offset_y;
+                  vfltnext_y := fltnext_y;
+                  
                
                ATIO.Put_Line (Integer'Image(10*linecount) & " fltnext_y = " & Float'Image (fltnext_y) ); 
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " fltnext_y = " & Float'Image (fltnext_y) ); 
@@ -375,6 +406,7 @@ is
                   fltnext_y := Float'Value(ASU.Slice(ubsnext_y, 2, 7));
                   ATIO.Put_Line (Integer'Image(10*linecount) & " fltnext_y = " & Float'Image (fltnext_y) );
                   ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " fltnext_y = " & Float'Image (fltnext_y) );
+                  vfltnext_y := fltnext_y;
                   
                  -- null;   
                end if;      
@@ -393,6 +425,7 @@ is
                
                -- fltnext_z := Float'Value(ASU.Slice(ubsnext_z, 3, 7));
                fltnext_z := (fltnext_z * gbl_flt_scaling_z) + gbl_flt_offset_z;
+               vfltnext_z := fltnext_z;
                
                ATIO.Put_Line (Integer'Image(10*linecount) & " fltnext_z = " & Float'Image (fltnext_z) ); 
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " fltnext_z = " & Float'Image (fltnext_z) ); 
@@ -412,6 +445,7 @@ is
                
                -- fltnext_i := Float'Value(ASU.Slice(ubsnext_i, 3, 7));
                fltnext_i := (fltnext_i * gbl_flt_scaling_i);
+               vfltnext_i := fltnext_i;
                
                ATIO.Put_Line (Integer'Image(10*linecount) & " fltnext_i = " & Float'Image (fltnext_i) ); 
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " fltnext_i = " & Float'Image (fltnext_i) ); 
@@ -431,6 +465,7 @@ is
                
                -- fltnext_j := Float'Value(ASU.Slice(ubsnext_j, 3, 7));
                fltnext_j := (fltnext_j * gbl_flt_scaling_j);
+               vfltnext_j := fltnext_j;
                
                ATIO.Put_Line (Integer'Image(10*linecount) & " fltnext_j = " & Float'Image (fltnext_j) ); 
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " fltnext_j = " & Float'Image (fltnext_j) ); 
@@ -448,41 +483,47 @@ is
                
                if (ASU.Slice(ubsnext_f, 4, 5) = "20") then
                   fltnext_f := gbl_flt_feedrate_20;
+                  vfltnext_f := fltnext_f;
                end if;
                
                if (ASU.Slice(ubsnext_f, 4, 5) = "21") then
                   fltnext_f := gbl_flt_feedrate_21;
+                  vfltnext_f := fltnext_f;
                end if;
                               
                ATIO.Put_Line (Integer'Image(10*linecount) & " fltnext_f = " & Float'Image (fltnext_f) ); 
                ATIO.Put_Line (out_fhandle_03, Integer'Image(10*linecount) & " fltnext_f = " & Float'Image (fltnext_f) ); 
                
             end if;
-            
-                    
-            
-            -- ================================================================
-            -- WRITE VECTOR LINE (INTERNAL PACKAGE CALL)
-            -- write_vector_line (straction, str_next_x, next_y, next_z, next_i, next_j, next_f);
-            
-            
-         end;
          
+       
+         end;
+        
       end loop;
+      
+       -- ================================================================
+       -- FOR EACH LINE PROCESSED
+       -- ================================================================
+       -- WRITE VECTOR LINE TO OUTPUT FILE
+      
+       if (vubs_action = "G00") or (vubs_action = "G01") then
+          vfltnext_i := 0.0;
+          vfltnext_j := 0.0;
+       end if; 
+      
+       ATIO.Put_Line (out_fhandle_04, Integer'Image(10*linecount) 
+                     & " " & ASU.To_String(vubs_action) 
+                     & " " & Float'Image(vfltnext_x)
+                     & " " & Float'Image(vfltnext_y)
+                     & " " & Float'Image(vfltnext_z)
+                     & " " & Float'Image(vfltnext_i)
+                     & " " & Float'Image(vfltnext_j)  
+                     & " " & Float'Image(vfltnext_f)    
+                    ); 
+      
   
    end vectorize_eachline;
-   
-   -- =====================================================
-   procedure write_vector_line (straction, strnext_x, strnext_y, strnext_z, strnext_i, strnext_j, strnext_f : in String )
-   -- =====================================================
-   is   
-   
-   begin
-   
-      
-      
-      null;
-   end write_vector_line;
+  
    
 -- ========================================================
 begin -- PACKAGE BEGIN

@@ -16,9 +16,10 @@ is
    package AART  renames Ada.Real_Time;
    package AATIO renames Ada.Text_IO;
    
-   procedure vectorize_eachline (linestring : in String; out_fhandle_02, out_fhandle_03 : in AATIO.File_Type; linecount: Integer);
-  
-   procedure write_vector_line (straction, strnext_x, strnext_y, strnext_z, strnext_i, strnext_j, strnext_f : in String );
+   procedure vectorize_eachline (linestring : in String; 
+                                 out_fhandle_02, out_fhandle_03, out_fhandle_04 : in AATIO.File_Type; 
+                                 linecount: Integer);
+     
    
 -- ======================================================== 
 end pkg_ada_vectorize_splitline;

@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/main_ada_edit_ngc_codes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 65" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/main_ada_edit_ngc_codes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 15" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/main_ada_edit_ngc_codes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 109" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/main_ada_edit_ngc_codes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 80" line=" 56" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 524" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 510" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 100" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 86" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 522" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 513" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 319" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 522" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 525" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 500" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 522" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 523" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 52" line=" 521" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 41" line=" 180" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 143" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 41" line=" 180" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 42" line=" 302" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 57" line=" 62" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 48" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 47" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 510" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 62" line=" 509" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 22" line=" 510" >
+      <vfs_project>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/ada_edit_ngc_codes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/wruslangit/ada-edit-ngc-codes/src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

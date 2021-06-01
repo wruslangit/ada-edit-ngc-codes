@@ -19,7 +19,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main_ada_edit_ngc_codes%b  main_ada_edit_ngc_codes.adb  7976b540 NE OO SU IL
+U main_ada_edit_ngc_codes%b  main_ada_edit_ngc_codes.adb  b15d50e2 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
@@ -54,11 +54,11 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D main_ada_edit_ngc_codes.adb  20210531075938 f7f73ae4 main_ada_edit_ngc_codes%b
+D main_ada_edit_ngc_codes.adb  20210601015455 de299e75 main_ada_edit_ngc_codes%b
 D pkg_ada_datetime_stamp.ads  20210330052953 cf0a71cd pkg_ada_datetime_stamp%s
 D pkg_ada_linestring_split.ads  20210530072213 dfbcde15 pkg_ada_linestring_split%s
 D pkg_ada_realtime_delays.ads  20210330053253 fb7e33dc pkg_ada_realtime_delays%s
-D pkg_ada_vectorize_splitline.ads  20210530112617 6f8c9596 pkg_ada_vectorize_splitline%s
+D pkg_ada_vectorize_splitline.ads  20210601033615 8e79d4a5 pkg_ada_vectorize_splitline%s
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
@@ -97,71 +97,75 @@ X 1 ada.ads
 X 7 a-reatim.ads
 39K13*Real_Time 185e18 18|7w10 8r10 24r32
 49O9*Time<duration> 18|34r36
-61V13*Clock{49O9} 18|66s22 121s23
+61V13*Clock{49O9} 18|68s22 130s23
 X 9 a-string.ads
 16K13*Strings 35e16 18|9r10 25r32
 X 11 a-strunb.ads
 76K21*Unbounded 491e26 18|9w18 25r40
 79R9*Unbounded_String<5|43R9> 474e14 18|48r27
-94V13*To_Unbounded_String{79R9} 18|85s28 95s28
-100V13*To_String{string} 18|102s42 109s37
+94V13*To_Unbounded_String{79R9} 18|89s28 99s28
+100V13*To_String{string} 18|106s42 113s37
 X 13 a-textio.ads
 49K13*Text_IO 471e16 18|6w10 23r32
-52P9*File_Type 18|40r28 51r29 52r29 53r29
-53E9*File_Mode 53e54 18|41r28 55r29 56r29 57r29
+52P9*File_Type 18|40r28 51r29 52r29 53r29 54r29
+53E9*File_Mode 53e54 18|41r28 56r29 57r29 58r29 59r29
 53n23*In_File{53E9} 18|41r47
-53n32*Out_File{53E9} 18|55r48 56r48 57r48
-86U14*Create 18|79s9 80s9 81s9
-92U14*Open 18|78s9
-98U14*Close 18|112s9 113s9 114s9 115s9
-101U14*Reset 18|90s9
-166U14*New_Line 18|69s9 119s9
-183V13*End_Of_File{boolean} 18|84s19 94s19
-242U14*Put 18|122s24
-253V13*Get_Line{string} 18|85s53 95s53
-259U14*Put_Line 18|102s12
-263U14*Put_Line 18|67s9 68s24 88s9 120s9
+53n32*Out_File{53E9} 18|56r48 57r48 58r48 59r48
+86U14*Create 18|81s9 82s9 83s9 84s9
+92U14*Open 18|80s9
+98U14*Close 18|120s9 121s9 122s9 123s9 124s9
+101U14*Reset 18|94s9
+166U14*New_Line 18|71s9 128s9
+183V13*End_Of_File{boolean} 18|88s19 98s19
+242U14*Put 18|131s24
+253V13*Get_Line{string} 18|89s53 99s53
+259U14*Put_Line 18|106s12
+263U14*Put_Line 18|69s9 70s24 92s9 129s9
 X 18 main_ada_edit_ngc_codes.adb
-18U11*main_ada_edit_ngc_codes 18b11 125l5 125t28
-23K12 ATIO=23:32 40r23 41r23 41r42 51r24 52r24 53r24 55r24 55r43 56r24 56r43
-. 57r24 57r43 67r4 68r19 69r4 78r4 79r4 80r4 81r4 84r14 85r48 88r4 90r4 94r14
-. 95r48 102r7 112r4 113r4 114r4 115r4 119r4 120r4 122r19
-24K12 ART=24:32 34r32 66r18 121r19
-25K12 ASU=25:40 48r23 85r24 95r24 102r38 109r33
-28K12 PADTS=28:28 66r29 68r4 119r19 122r4
-29K12 PARTD=29:28 123r4
+18U11*main_ada_edit_ngc_codes 18b11 134l5 134t28
+23K12 ATIO=23:32 40r23 41r23 41r42 51r24 52r24 53r24 54r24 56r24 56r43 57r24
+. 57r43 58r24 58r43 59r24 59r43 69r4 70r19 71r4 80r4 81r4 82r4 83r4 84r4
+. 88r14 89r48 92r4 94r4 98r14 99r48 106r7 120r4 121r4 122r4 123r4 124r4 128r4
+. 129r4 131r19
+24K12 ART=24:32 34r32 68r18 130r19
+25K12 ASU=25:40 48r23 89r24 99r24 106r38 113r33
+28K12 PADTS=28:28 68r29 70r4 128r19 131r4
+29K12 PARTD=29:28 132r4
 30K12 PALSS=30:28
-31K12 PAVSL=31:28 109r7
-34o4 startClock{7|49O9} 66m4 123r38
-34o16 finishClock{7|49O9} 121m4 123r50
-40p4 inp_fhandle{13|52P9} 78m15 78r15 84r32 85r63 90m15 90r15 94r32 95r63
-. 115m16 115r16
-41e4 inp_fmode{13|53E9} 78r28
-43a4 inp_fname{string} 78r39
-44a4 inp_fform{string} 78r50
+31K12 PAVSL=31:28 113r7
+34o4 startClock{7|49O9} 68m4 132r38
+34o16 finishClock{7|49O9} 130m4 132r50
+40p4 inp_fhandle{13|52P9} 80m15 80r15 88r32 89r63 94m15 94r15 98r32 99r63
+. 124m16 124r16
+41e4 inp_fmode{13|53E9} 80r28
+43a4 inp_fname{string} 80r39
+44a4 inp_fform{string} 80r50
 45a4 inp_fOwnID{string}
-47i4 inp_lineCount{integer} 86m7 86r24 88r60 91m4 96m7 96r24 109r96
-48r4 inp_UBlineStr{11|79R9} 85m7 95m7 102r53 109r48
-51p4 out_fhandle_01{13|52P9} 79m17 79r17 102r22 112m16 112r16
-52p4 out_fhandle_02{13|52P9} 80m17 80r17 109r64 113m16 113r16
-53p4 out_fhandle_03{13|52P9} 81m17 81r17 109r80 114m16 114r16
-55e4 out_fmode_01{13|53E9} 79r33
-56e4 out_fmode_02{13|53E9} 80r33
-57e4 out_fmode_03{13|53E9} 81r33
-59a4 out_fname_01{string} 79r47
-60a4 out_fname_02{string} 80r47
-61a4 out_fname_03{string} 81r47
+47i4 inp_lineCount{integer} 90m7 90r24 92r60 95m4 100m7 100r24 117r33
+48r4 inp_UBlineStr{11|79R9} 89m7 99m7 106r53 113r48
+51p4 out_fhandle_01{13|52P9} 81m17 81r17 106r22 120m16 120r16
+52p4 out_fhandle_02{13|52P9} 82m17 82r17 114r33 121m16 121r16
+53p4 out_fhandle_03{13|52P9} 83m17 83r17 115r33 122m16 122r16
+54p4 out_fhandle_04{13|52P9} 84m17 84r17 116r33 123m16 123r16
+56e4 out_fmode_01{13|53E9} 81r33
+57e4 out_fmode_02{13|53E9} 82r33
+58e4 out_fmode_03{13|53E9} 83r33 84r33
+59e4 out_fmode_04{13|53E9}
+61a4 out_fname_01{string} 81r47
+62a4 out_fname_02{string} 82r47
+63a4 out_fname_03{string} 83r47
+64a4 out_fname_04{string} 84r47
 X 19 pkg_ada_datetime_stamp.ads
 10K9*pkg_ada_datetime_stamp 18|12w6 28r28 19|27e27
-21U14*dtstamp 18|66s35 68s10 119s25 122s10
+21U14*dtstamp 18|68s35 70s10 128s25 131s10
 X 20 pkg_ada_linestring_split.ads
 11K9*pkg_ada_linestring_split 18|14w6 30r28 20|24e29
 X 21 pkg_ada_realtime_delays.ads
 10K9*pkg_ada_realtime_delays 18|13w6 29r28 21|46e28
-36U14*exec_display_execution_time 18|123s10
+36U14*exec_display_execution_time 18|132s10
 X 22 pkg_ada_vectorize_splitline.ads
-11K9*pkg_ada_vectorize_splitline 18|15w6 31r28 22|24e32
-19U14*vectorize_eachline 18|109s13
+11K9*pkg_ada_vectorize_splitline 18|15w6 31r28 22|25e32
+19U14*vectorize_eachline 18|113s13
 X 23 system.ads
 67M9*Address
 X 34 s-memory.ads

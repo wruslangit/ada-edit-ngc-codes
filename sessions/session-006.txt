@@ -1,0 +1,154 @@
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslangit/ada-edit-ngc-codes$ ls -al
+total 44
+drwxrwxr-x  9 wruslan wruslan 4096 May 31 15:48 .
+drwxrwxr-x 29 wruslan wruslan 4096 May 31 15:28 ..
+-rw-rw-r--  1 wruslan wruslan 1826 May 31 15:48 ada_edit_ngc_codes.gpr
+drwxrwxr-x  3 wruslan wruslan 4096 May 31 15:43 docs
+drwxrwxr-x  2 wruslan wruslan 4096 May 31 15:59 exec
+drwxrwxr-x  4 wruslan wruslan 4096 May 31 15:55 files
+drwxrwxr-x  8 wruslan wruslan 4096 May 31 15:59 .git
+drwxrwxr-x  2 wruslan wruslan 4096 May 31 15:59 obj
+-rw-rw-r--  1 wruslan wruslan   80 May 31 15:28 README.md
+drwxrwxr-x  2 wruslan wruslan 4096 May 31 00:16 sessions
+drwxrwxr-x  6 wruslan wruslan 4096 May 31 15:59 src
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslangit/ada-edit-ngc-codes$ sudo updatedb
+[sudo] password for wruslan: 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslangit/ada-edit-ngc-codes$ git add .
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslangit/ada-edit-ngc-codes$ git commit -m "initial commit"
+[main 5ee6e9b] initial commit
+ 118 files changed, 31794 insertions(+)
+ create mode 100644 ada_edit_ngc_codes.gpr
+ create mode 100644 docs/ada-split-strings.txt
+ create mode 100644 docs/docs-strings-edit/centos-logo.jpg
+ create mode 100644 docs/docs-strings-edit/debian-logo.jpg
+ create mode 100644 docs/docs-strings-edit/download.jpg
+ create mode 100644 docs/docs-strings-edit/fedora-logo.jpg
+ create mode 100644 docs/docs-strings-edit/home.jpg
+ create mode 100644 docs/docs-strings-edit/in.jpg
+ create mode 100644 docs/docs-strings-edit/index.gif
+ create mode 100644 docs/docs-strings-edit/next.gif
+ create mode 100644 docs/docs-strings-edit/prev.gif
+ create mode 100644 docs/docs-strings-edit/readme_strings_edit.txt
+ create mode 100644 docs/docs-strings-edit/strings_edit.htm
+ create mode 100644 docs/docs-strings-edit/strings_edit_scale.gif
+ create mode 100644 docs/docs-strings-edit/ubuntu-logo.jpg
+ create mode 100644 docs/gnat-string-split-example.txt
+ create mode 100644 docs/session-setup.txt
+ create mode 100644 docs/success-session-compile-strings-edit-PASE.txt
+ create mode 100755 exec/main_ada_edit_ngc_codes.adx
+ create mode 100644 files/bismillah.ngc
+ create mode 100644 files/ngc-code.ngc
+ create mode 100644 files/ngc-code.ngc_file_01.txt
+ create mode 100644 files/ngc-code.ngc_file_02.txt
+ create mode 100644 files/ngc-code.ngc_file_03.txt
+ create mode 100644 files/output_run01/ngc-code.ngc_file_01.txt
+ create mode 100644 files/output_run01/ngc-code.ngc_file_02.txt
+ create mode 100644 files/output_run01/ngc-code.ngc_file_03.txt
+ create mode 100644 files/output_run02/ngc-code.ngc_file_01.txt
+ create mode 100644 files/output_run02/ngc-code.ngc_file_02.txt
+ create mode 100644 files/output_run02/ngc-code.ngc_file_03.txt
+ create mode 100644 obj/ada_strings_asu-loc.xml
+ create mode 100644 obj/ada_strings_unbounded_edit-loc.xml
+ create mode 100644 obj/b__main_ada_edit_ngc_codes.adb
+ create mode 100644 obj/b__main_ada_edit_ngc_codes.ads
+ create mode 100644 obj/b__main_ada_edit_ngc_codes.ali
+ create mode 100644 obj/b__main_ada_edit_ngc_codes.o
+ create mode 100644 obj/b__main_ada_strings_asu.adb
+ create mode 100644 obj/b__main_ada_strings_asu.ads
+ create mode 100644 obj/b__main_ada_strings_asu.ali
+ create mode 100644 obj/b__main_ada_strings_asu.o
+ create mode 100644 obj/b__main_ada_strings_unbounded_edit.adb
+ create mode 100644 obj/b__main_ada_strings_unbounded_edit.ads
+ create mode 100644 obj/b__main_ada_strings_unbounded_edit.ali
+ create mode 100644 obj/b__main_ada_strings_unbounded_edit.o
+ create mode 100644 obj/gpsauto.cgpr
+ create mode 100644 obj/main_ada_edit_ngc_codes.adb.stderr
+ create mode 100644 obj/main_ada_edit_ngc_codes.adb.stdout
+ create mode 100644 obj/main_ada_edit_ngc_codes.ali
+ create mode 100644 obj/main_ada_edit_ngc_codes.bexch
+ create mode 100644 obj/main_ada_edit_ngc_codes.cswi
+ create mode 100644 obj/main_ada_edit_ngc_codes.o
+ create mode 100644 obj/main_ada_strings_asu.adb.stderr
+ create mode 100644 obj/main_ada_strings_asu.adb.stdout
+ create mode 100644 obj/main_ada_strings_asu.ali
+ create mode 100644 obj/main_ada_strings_asu.bexch
+ create mode 100644 obj/main_ada_strings_asu.cswi
+ create mode 100644 obj/main_ada_strings_asu.o
+ create mode 100644 obj/main_ada_strings_unbounded_edit.adb.stderr
+ create mode 100644 obj/main_ada_strings_unbounded_edit.adb.stdout
+ create mode 100644 obj/main_ada_strings_unbounded_edit.ali
+ create mode 100644 obj/main_ada_strings_unbounded_edit.bexch
+ create mode 100644 obj/main_ada_strings_unbounded_edit.cswi
+ create mode 100644 obj/main_ada_strings_unbounded_edit.o
+ create mode 100644 obj/pkg_ada_datetime_stamp.adb.stderr
+ create mode 100644 obj/pkg_ada_datetime_stamp.adb.stdout
+ create mode 100644 obj/pkg_ada_datetime_stamp.ali
+ create mode 100644 obj/pkg_ada_datetime_stamp.cswi
+ create mode 100644 obj/pkg_ada_datetime_stamp.o
+ create mode 100644 obj/pkg_ada_file_read_display.adb.stderr
+ create mode 100644 obj/pkg_ada_file_read_display.adb.stdout
+ create mode 100644 obj/pkg_ada_file_read_display.ali
+ create mode 100644 obj/pkg_ada_file_read_display.cswi
+ create mode 100644 obj/pkg_ada_file_read_display.o
+ create mode 100644 obj/pkg_ada_file_read_write.adb.stderr
+ create mode 100644 obj/pkg_ada_file_read_write.adb.stdout
+ create mode 100644 obj/pkg_ada_file_read_write.ali
+ create mode 100644 obj/pkg_ada_file_read_write.cswi
+ create mode 100644 obj/pkg_ada_file_read_write.o
+ create mode 100644 obj/pkg_ada_linestring_split.adb.stderr
+ create mode 100644 obj/pkg_ada_linestring_split.adb.stdout
+ create mode 100644 obj/pkg_ada_linestring_split.ali
+ create mode 100644 obj/pkg_ada_linestring_split.cswi
+ create mode 100644 obj/pkg_ada_linestring_split.o
+ create mode 100644 obj/pkg_ada_realtime_delays.adb.stderr
+ create mode 100644 obj/pkg_ada_realtime_delays.adb.stdout
+ create mode 100644 obj/pkg_ada_realtime_delays.ali
+ create mode 100644 obj/pkg_ada_realtime_delays.cswi
+ create mode 100644 obj/pkg_ada_realtime_delays.o
+ create mode 100644 obj/pkg_ada_strings_edit.adb.stderr
+ create mode 100644 obj/pkg_ada_strings_edit.adb.stdout
+ create mode 100644 obj/pkg_ada_strings_edit.ali
+ create mode 100644 obj/pkg_ada_vectorize_splitline.adb.stderr
+ create mode 100644 obj/pkg_ada_vectorize_splitline.adb.stdout
+ create mode 100644 obj/pkg_ada_vectorize_splitline.ali
+ create mode 100644 obj/pkg_ada_vectorize_splitline.cswi
+ create mode 100644 obj/pkg_ada_vectorize_splitline.o
+ create mode 100644 obj/strings_edit.adb.stderr
+ create mode 100644 obj/strings_edit.adb.stdout
+ create mode 100644 obj/strings_edit.ali
+ create mode 100644 obj/strings_edit.cswi
+ create mode 100644 obj/strings_edit.o
+ create mode 100644 sessions/session-001.txt
+ create mode 100644 sessions/session-002.txt
+ create mode 100644 sessions/session-003.txt
+ create mode 100644 sessions/session-004.txt
+ create mode 100644 sessions/session-005.txt
+ create mode 100644 src/main_ada_edit_ngc_codes.adb
+ create mode 100644 src/pkg-ada-datetime-stamp/pkg_ada_datetime_stamp.adb
+ create mode 100644 src/pkg-ada-datetime-stamp/pkg_ada_datetime_stamp.ads
+ create mode 100644 src/pkg-ada-datetime-stamp/pkg_ada_datetime_stamp.hlp
+ create mode 100644 src/pkg-ada-linestring-split/pkg_ada_linestring_split.adb
+ create mode 100644 src/pkg-ada-linestring-split/pkg_ada_linestring_split.ads
+ create mode 100644 src/pkg-ada-linestring-split/pkg_ada_linestring_split.hlp
+ create mode 100644 src/pkg-ada-realtime-delays/pkg_ada_realtime_delays.adb
+ create mode 100644 src/pkg-ada-realtime-delays/pkg_ada_realtime_delays.ads
+ create mode 100644 src/pkg-ada-realtime-delays/pkg_ada_realtime_delays.hlp
+ create mode 100644 src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.adb
+ create mode 100644 src/pkg-ada-vectorize-splitline/pkg_ada_vectorize_splitline.ads
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslangit/ada-edit-ngc-codes$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslangit/ada-edit-ngc-codes$ git push origin main
+Username for 'https://github.com': wruslangit
+Password for 'https://wruslangit@github.com': 
+Enumerating objects: 104, done.
+Counting objects: 100% (104/104), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (102/102), done.
+Writing objects: 100% (103/103), 302.70 KiB | 5.22 MiB/s, done.
+Total 103 (delta 31), reused 0 (delta 0)
+remote: Resolving deltas: 100% (31/31), done.
+To https://github.com/wruslangit/ada-edit-ngc-codes.git
+   1919afe..5ee6e9b  main -> main
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslangit/ada-edit-ngc-codes$ 
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslangit/ada-edit-ngc-codes$ 
+
+

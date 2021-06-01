@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#7976b540#;
+   u00001 : constant Version_32 := 16#b15d50e2#;
    pragma Export (C, u00001, "main_ada_edit_ngc_codesB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -447,9 +447,9 @@ package ada_main is
    pragma Export (C, u00204, "ada__real_time__delaysB");
    u00205 : constant Version_32 := 16#0a5c26d7#;
    pragma Export (C, u00205, "ada__real_time__delaysS");
-   u00206 : constant Version_32 := 16#7ecf16ac#;
+   u00206 : constant Version_32 := 16#f7159f94#;
    pragma Export (C, u00206, "pkg_ada_vectorize_splitlineB");
-   u00207 : constant Version_32 := 16#e5d1dabf#;
+   u00207 : constant Version_32 := 16#04249b8c#;
    pragma Export (C, u00207, "pkg_ada_vectorize_splitlineS");
    u00208 : constant Version_32 := 16#8aa4f090#;
    pragma Export (C, u00208, "system__img_realB");
